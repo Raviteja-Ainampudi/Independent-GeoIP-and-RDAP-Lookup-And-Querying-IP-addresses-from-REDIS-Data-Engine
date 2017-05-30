@@ -5,7 +5,7 @@ Created on Tue May 02 14:46:20 2017
 @author: RAVI TEJA
 """
 import sys
-#sys.path.insert(0,"/home/osboxes/Downloads/swimlane/")  #If directory at different locataion than regular Python bin
+#sys.path.insert(0,"/home/ravi/Downloads/swimlane/")  #If directory at different locataion than regular Python bin
                                                           #If expected to import other source files
 import geip
 import rdap
@@ -93,7 +93,7 @@ def rdapfilter():
 if __name__ == "__main__" :
     """ IP Address extraction from random styled text document is done here."""
     
-    with open("/home/osboxes/Downloads/swimlane/list_of_ips (1).txt","r") as f:
+    with open("/home/ravi/Downloads/swimlane/list_of_ips (1).txt","r") as f:
         x = f.read()
         x = x.split()
         y = map(lambda s:s.strip(),x)
