@@ -9,10 +9,10 @@ import pandas as pd
 import numpy as np
 from math import isnan
 
-df = pd.read_csv("/home/osboxes/Downloads/swimlane/GeoIPCountryWhois.csv", names = ["startip","endip","startnum","endnum","code","country"], low_memory=False)
-df2 = pd.read_csv("/home/osboxes/Downloads/swimlane/GeoLiteCity-Blocks.csv", names =["startIpNum","endIpNum","locId"], low_memory=False)
-df3 = pd.read_csv("/home/osboxes/Downloads/swimlane/GeoLiteCity-Location.csv", names = ["locId","country","region","city","postalcode","latitude","longitude","metrocode","areacode"], low_memory=False)
-df4 = pd.read_csv("/home/osboxes/Downloads/swimlane/GeoIPASNum2.csv", names=["startnum","endnum","asn"], low_memory=False)
+df = pd.read_csv("/home/ravi/Downloads/swimlane/GeoIPCountryWhois.csv", names = ["startip","endip","startnum","endnum","code","country"], low_memory=False)
+df2 = pd.read_csv("/home/ravi/Downloads/swimlane/GeoLiteCity-Blocks.csv", names =["startIpNum","endIpNum","locId"], low_memory=False)
+df3 = pd.read_csv("/home/ravi/Downloads/swimlane/GeoLiteCity-Location.csv", names = ["locId","country","region","city","postalcode","latitude","longitude","metrocode","areacode"], low_memory=False)
+df4 = pd.read_csv("/home/ravi/Downloads/swimlane/GeoIPASNum2.csv", names=["startnum","endnum","asn"], low_memory=False)
 
 def func1(x):
     """This fuction calls func2(x) to determine the location ID and Start IP Number. 
