@@ -11,6 +11,7 @@ ________________________________________________________________________________
 2. From RDAP lookup 8 different paramters can be obatined.
 3. All the newlookups will be updated in Redis database accrodingly and queries for desired attributes can be done effectively. 
 4. As the lookup databases databases used are free, the range of IP addresses this model works is 1.0.0.0 – 223.255.255.255. 
+5. Change the file paths accordingly in the project. And if necessary, the sys.path as well if PYTHONPATH is different.
 --------------------------------------------------------------------------------
 
 * basefile.py - Central file to run the project.
